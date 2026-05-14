@@ -2,7 +2,7 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 cv_pdf: /assets/pdf/CV_MengWang.pdf # path to your CV PDF file
-email: m.wang@ubc.ca # your email address
+email: mengwang@ece.ubc.ca # your email address
 github_username: meng-ubc # your GitHub user name
 linkedin_username: mengwang-ubc # your LinkedIn user name
 rss_icon: false # comment this line to hide the RSS icon

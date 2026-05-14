@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>4025 Kaisar</p>
+    <p>4025 Fred Kaiser Building</p>
     <p>2332 Main Mall, Vancouver</p>
     <p>BC, Canada V6T 1Z4</p>
 
@@ -27,8 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I'm a Ph.D. candidate in Computer Engineering at the University of British Columbia. I have the pleasure of working under the guidance of [Professor Prashant Nair](https://prashantnair.bitbucket.io/).
+Hello! I'm a Ph.D. candidate in Computer Engineering at the University of British Columbia, where I work with [Professor Prashant Nair](https://prashantnair.bitbucket.io/).
 
-My research is centered on practical quantum computing for the Noisy Intermediate-Scale Quantum (NISQ) era and Fault-tolerant Quantum Computing (FTQC). I am passionate about exploring and developing quantum algorithms and technologies that can overcome the current limitations of quantum hardware. My goal is to contribute to making quantum computing more practical and accessible for solving real-world problems.
+My research focuses on scalable and efficient quantum computing systems, with an emphasis on quantum error correction, fault-tolerant quantum computing, and architecture and software techniques across the quantum computing stack. I am interested in quantum-classical co-design and in reducing the cost of executing quantum programs on practical large-scale systems.
 
-Feel free to reach out if you're interested in discussing quantum computing or any other exciting tech innovations!
+I have also conducted research at Pacific Northwest National Laboratory, applying high-performance computing techniques to quantum simulation and system-level quantum computing challenges.

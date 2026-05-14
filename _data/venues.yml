@@ -14,14 +14,23 @@
 "ISCA":
   color: "#00d862"
 
+"PRR":
+  color: "#6f42c1"
+
 "HPCA":
   color: "#e59148"
 
 "SC":
   color: "#abc328"
 
+"QCS":
+  color: "#5d9cec"
+
 "QCCC":
   color: "#A77979"
+
+"Q-CORE":
+  color: "#4b8f8c"
 
 "March Meeting":
   color: "#D65F5F"
