@@ -1,0 +1,30 @@
+"AJP":
+  url: https://aapt.scitation.org/journal/ajp
+  color: "#00369f"
+
+"PhysRev":
+  url: https://journals.aps.org/
+
+"MICRO":
+  color: "#e554ac"
+
+"ASPLOS":
+  color: "#008ec8"
+
+"ISCA":
+  color: "#00d862"
+
+"HPCA":
+  color: "#e59148"
+
+"SC":
+  color: "#abc328"
+
+"QCCC":
+  color: "#A77979"
+
+"March Meeting":
+  color: "#D65F5F"
+
+"arXiv":
+  color: "#BCCCDC"

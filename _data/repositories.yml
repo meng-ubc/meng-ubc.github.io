@@ -1,0 +1,8 @@
+github_users:
+  - meng-ubc
+
+github_repos:
+  - meng-ubc/Red-QAOA
+  - pnnl/NWQ-Sim
+  - pnnl/qasmtrans
+  - eclipse/xacc
