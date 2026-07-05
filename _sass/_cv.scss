@@ -72,6 +72,22 @@ td.department {
   font-size: 0.8rem;
 }
 
+.cv .date-column {
+  min-width: 140px;
+  transform: none;
+}
+
+.cv-date-label {
+  display: inline-block;
+  min-width: 132px;
+  color: var(--global-text-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 div.container-links {
   display: flex;
   flex-direction: row;

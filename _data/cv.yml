@@ -1,2 +1,117 @@
-# Structured CV entries can be added here for the al-folio CV page.
-# The site also links to assets/pdf/CV_MengWang.pdf.
+cv:
+  name: Meng Wang
+  label: Ph.D. Candidate in Computer Engineering
+  email:
+  website: https://meng-ubc.github.io
+  address:
+    street: 4025 Fred Kaiser Building, 2332 Main Mall
+    city: Vancouver
+    region: BC, Canada
+    postalCode: V6T 1Z4
+  sections:
+    Education:
+      - institution: The University of British Columbia
+        degree: Ph.D. in Electrical and Computer Engineering
+        start_date: 2020-09
+        end_date: Present
+        location: Vancouver, BC, Canada
+        highlights:
+          - "Advisor: Prof. Prashant J. Nair"
+      - institution: The University of British Columbia
+        degree: BASc in Computer Engineering
+        end_date: 2020-06
+        location: Vancouver, BC, Canada
+        highlights:
+          - Graduated with Distinction
+    Experience:
+      - company: Pacific Northwest National Laboratory
+        position: Ph.D. Research Intern
+        start_date: 2024-09
+        end_date: 2025-09
+        location: Richland, WA, USA
+        summary: "Mentor: Dr. Ang Li"
+        highlights:
+          - Led research on architectural optimizations for fault-tolerant quantum computing, resulting in an accepted paper at **ISCA 2026** focused on transpiler-architecture co-design to curb Clifford costs, with follow-up work currently in preparation for **HPCA 2027**.
+      - company: Pacific Northwest National Laboratory
+        position: Ph.D. Research Intern
+        start_date: 2022-10
+        end_date: 2023-08
+        location: Richland, WA, USA
+        summary: "Mentors: Dr. Ang Li and Dr. Bo Fang"
+        highlights:
+          - Participated in developing simulation frameworks leveraging leading HPC systems including Frontier, Summit, and Perlmutter to simulate large-scale quantum circuits on GPU clusters. The simulation framework is open-sourced at [NWQ-Sim](https://github.com/pnnl/NWQ-Sim).
+          - Led research improving the efficiency of classical optimization in Quantum Approximate Optimization Algorithm (QAOA), resulting in the publication of Red-QAOA (**ASPLOS 2024**), which introduces a novel circuit reduction technique for efficient variational optimization.
+    "Invited Talks and Guest Lectures":
+      - format: Seminar
+        title: "From Circuits to Systems: Rethinking How Quantum Computation is Realized"
+        institution: North Carolina State University
+        place: Raleigh, NC, USA
+        host: Prof. Huiyang Zhou
+        date: July 2026
+      - format: Guest lecture
+        title: "Pushing the Boundaries of NISQ Computing"
+        institution: The University of Texas at Austin
+        place: Austin, TX, USA
+        host: Prof. Poulami Das
+        date: November 2024
+      - format: Invited talk
+        title: "Rethinking Variational Quantum Optimization through Circuit-Level Efficiency"
+        institution: University of Wisconsin-Madison
+        place: Madison, WI, USA
+        host: Prof. Swamit Tannu
+        date: August 2023
+    "Professional Service":
+      - bullet: "**Technical Program Committee**, MICRO 2026, IEEE/ACM International Symposium on Microarchitecture."
+    "Research Software Infrastructure":
+      - name: NWQEC
+        url: https://github.com/pnnl/nwqec
+        summary: Led development of a C++/Python toolkit for fault-tolerant quantum circuit transpilation, including OpenQASM parsing, Clifford+T synthesis, T-count analysis, Pauli-based circuit optimization, and Clifford reduction passes for QEC-oriented compilation research.
+      - name: NWQ-Sim
+        url: https://github.com/pnnl/nwq-sim
+        summary: Core contributor to a quantum system simulation environment for multi-node, multi-CPU/GPU HPC systems, supporting state-vector and density-matrix simulation with frontends including QASM, Qiskit, QIR/Q#, and XACC.
+      - name: QASMTrans
+        url: https://github.com/pnnl/qasmtrans
+        summary: Core contributor to a C++ OpenQASM transpiler for mapping quantum circuits to NISQ devices under vendor-specific basis-gate and qubit-topology constraints, with support for IBMQ, Rigetti, IonQ, and Quantinuum-style backends.
+      - name: XACC
+        url: https://github.com/eclipse-xacc/xacc
+        summary: Contributed to XACC, an extensible hybrid quantum-classical programming and compilation framework with language frontends, backend compilation components, and a quantum intermediate representation for QPUs and simulators.
+    Mentoring:
+      - bullet: Mentored **Aaron Hoyt** from the University of Washington on QASMTrans, contributing to an accepted journal paper at **Transactions on Quantum Computing**.
+      - bullet: Mentored **Sean Garner** from the University of Washington on quantum error-correction noise simulation, contributing to a publication in **Physical Review Research**.
+      - bullet: Mentored **Avinash Kumar** from the University of Texas at Austin on Qontext, a project on secure context switching for multi-programmed near-term quantum computers.
+    "Teaching Experience":
+      - name: Teaching Assistant
+        summary: UBC, Vancouver, BC, Canada
+        highlights:
+          - CPEN 312 - Digital Systems and Microcomputers, January 2024 - April 2024
+          - CPSC 322 - Introduction to Artificial Intelligence, July 2022 - August 2022
+          - APSC 160 - Introduction to Computation in Engineering Design, January 2022 - April 2022
+          - CPEN 411 - Computer Architecture, September 2021 - December 2021
+          - CPSC 340 - Machine Learning and Data Mining, January 2021 - April 2021
+    Awards:
+      - title: Student Travel Grant
+        awarder: ASPLOS 2024, MICRO 2024, ISCA 2025, ISCA 2026
+      - title: Faculty of Applied Science Graduate Award
+        awarder: UBC
+        summary: Annual award received in 2021, 2022, 2023, and 2024, subject to annual review and criteria fulfillment.
+      - title: APSC Capstone Faculty Award
+        awarder: UBC, May 2020
+      - title: Dean's Honour List
+        awarder: UBC, June 2019
+    Skills:
+      - name: Programming languages
+        keywords:
+          - Verilog
+          - C
+          - C++
+          - CUDA
+          - HIP
+          - MPI
+          - Java
+          - Python
+          - ARMv7 Assembly
+          - Racket
+      - name: Hardware
+        keywords:
+          - System-on-Chip (SoC)
+          - FPGA

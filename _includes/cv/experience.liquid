@@ -16,12 +16,94 @@
           {% capture end_date %}
             {% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}
           {% endcapture %}
+          {% assign start_date = start_date | strip %}
+          {% assign end_date = end_date | strip %}
 
           {% if start_date != '' %}
-            {% comment %} Extract year only from dates like "1933-01-01" or just use "1933" as is {% endcomment %}
-            {% assign startDate = start_date | split: '-' | first %}
-            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' | append: endDate %}
+            {% assign start_parts = start_date | split: '-' %}
+            {% assign start_year = start_parts[0] %}
+            {% assign start_month = start_parts[1] %}
+            {% case start_month %}
+              {% when '01' %}
+                {% assign start_month_name = 'Jan' %}
+              {% when '02' %}
+                {% assign start_month_name = 'Feb' %}
+              {% when '03' %}
+                {% assign start_month_name = 'Mar' %}
+              {% when '04' %}
+                {% assign start_month_name = 'Apr' %}
+              {% when '05' %}
+                {% assign start_month_name = 'May' %}
+              {% when '06' %}
+                {% assign start_month_name = 'Jun' %}
+              {% when '07' %}
+                {% assign start_month_name = 'Jul' %}
+              {% when '08' %}
+                {% assign start_month_name = 'Aug' %}
+              {% when '09' %}
+                {% assign start_month_name = 'Sep' %}
+              {% when '10' %}
+                {% assign start_month_name = 'Oct' %}
+              {% when '11' %}
+                {% assign start_month_name = 'Nov' %}
+              {% when '12' %}
+                {% assign start_month_name = 'Dec' %}
+              {% else %}
+                {% assign start_month_name = '' %}
+            {% endcase %}
+            {% if start_month_name != '' %}
+              {% assign startDate = start_month_name | append: ' ' | append: start_year %}
+            {% else %}
+              {% assign startDate = start_year %}
+            {% endif %}
+            {% if end_date == 'Present' or end_date == '' %}
+              {% assign endDate = end_date | default: 'Present' %}
+            {% else %}
+              {% assign end_parts = end_date | split: '-' %}
+              {% assign end_year = end_parts[0] %}
+              {% assign end_month = end_parts[1] %}
+              {% case end_month %}
+                {% when '01' %}
+                  {% assign end_month_name = 'Jan' %}
+                {% when '02' %}
+                  {% assign end_month_name = 'Feb' %}
+                {% when '03' %}
+                  {% assign end_month_name = 'Mar' %}
+                {% when '04' %}
+                  {% assign end_month_name = 'Apr' %}
+                {% when '05' %}
+                  {% assign end_month_name = 'May' %}
+                {% when '06' %}
+                  {% assign end_month_name = 'Jun' %}
+                {% when '07' %}
+                  {% assign end_month_name = 'Jul' %}
+                {% when '08' %}
+                  {% assign end_month_name = 'Aug' %}
+                {% when '09' %}
+                  {% assign end_month_name = 'Sep' %}
+                {% when '10' %}
+                  {% assign end_month_name = 'Oct' %}
+                {% when '11' %}
+                  {% assign end_month_name = 'Nov' %}
+                {% when '12' %}
+                  {% assign end_month_name = 'Dec' %}
+                {% else %}
+                  {% assign end_month_name = '' %}
+              {% endcase %}
+              {% if end_month_name != '' %}
+                {% assign endDate = end_month_name | append: ' ' | append: end_year %}
+              {% else %}
+                {% assign endDate = end_year %}
+              {% endif %}
+            {% endif %}
+            {% if startDate == endDate %}
+              {% assign date = startDate %}
+            {% else %}
+              {% assign date = startDate | append: ' - ' | append: endDate %}
+            {% endif %}
+          {% elsif end_date != '' %}
+            {% assign end_parts = end_date | split: '-' %}
+            {% assign date = end_parts[0] %}
           {% else %}
             {% assign date = '' %}
           {% endif %}
@@ -30,7 +112,7 @@
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
+                  <span class="cv-date-label">{{ date }}</span>
                 </td>
               </tr>
               {% capture location %}

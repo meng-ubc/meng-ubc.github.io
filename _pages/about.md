@@ -2,16 +2,13 @@
 layout: about
 title: About Me
 permalink: /
-subtitle: <a href='#'>PhD Student in Computer Engineering</a>. The University of British Columbia
+subtitle: The University of British Columbia
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: portrait.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>4025 Fred Kaiser Building</p>
-    <p>2332 Main Mall, Vancouver</p>
-    <p>BC, Canada V6T 1Z4</p>
+  image_ellipse: true
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +24,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I'm a Ph.D. candidate in Computer Engineering at the University of British Columbia, where I work with [Professor Prashant Nair](https://prashantnair.bitbucket.io/).
+Hello! I'm a Ph.D. candidate in Computer Engineering at the University of British Columbia, where I work with [Professor Prashant J. Nair](https://prashantnair.bitbucket.io/).
 
-My research focuses on scalable and efficient quantum computing systems, with an emphasis on quantum error correction, fault-tolerant quantum computing, and architecture and software techniques across the quantum computing stack. I am interested in quantum-classical co-design and in reducing the cost of executing quantum programs on practical large-scale systems.
+My research focuses on **scalable and efficient quantum computing systems**. It spans **quantum architecture, quantum compilation, simulation, and fault-tolerant quantum computing**, with an emphasis on system-level techniques that reduce the cost of executing quantum programs across the computing stack.
 
-I have also conducted research at Pacific Northwest National Laboratory, applying high-performance computing techniques to quantum simulation and system-level quantum computing challenges.
+My work has appeared in top computer architecture venues including **ISCA**, **MICRO**, and **ASPLOS**. I develop compiler, architecture, and runtime techniques for quantum circuit simulation, distributed and multi-device execution, and fault-tolerant quantum computation, with an emphasis on bridging theoretical quantum algorithms, practical large-scale systems, and emerging quantum hardware.
+
+I have also built cross-disciplinary and multi-institution collaborations, including quantum chemistry simulation work at UBC with the National Research Council Canada (**NRC**) and participation in the Quantum Science Center (**QSC**) and Co-design Center for Quantum Advantage (**C2QA**) during my research at Pacific Northwest National Laboratory (**PNNL**). These collaborations connect quantum systems research with applications in computer science, chemistry, physics, and national laboratory programs.

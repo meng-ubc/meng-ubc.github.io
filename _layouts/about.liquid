@@ -10,8 +10,10 @@ layout: default
       {% else %}
         {{ site.title }}
       {% endif %}
+      {% if page.subtitle %}
+        <span class="about-title-affiliation">{{ page.subtitle }}</span>
+      {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
   </header>
 
   <article>
@@ -21,6 +23,8 @@ layout: default
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% elsif page.profile.image_ellipse %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 profile-ellipse' %}
           {% else %}
             {% assign profile_image_class = 'img-fluid z-depth-1
       rounded' %}

@@ -1,0 +1,39 @@
+{% comment %}
+  Renderer for invited talks and guest lectures.
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    <li class="list-group-item">
+      {% if entry.format %}
+        <h6 class="title font-weight-bold">{{ entry.format }}</h6>
+      {% endif %}
+
+      {% if entry.title %}
+        <div class="cv-talk-title">{{ entry.title }}</div>
+      {% endif %}
+
+      {% if entry.institution or entry.place %}
+        <div>
+          {% if entry.institution %}{{ entry.institution }}{% endif -%}
+          {%- if entry.institution and entry.place %}, {% endif -%}
+          {%- if entry.place %}{{ entry.place }}{% endif %}
+        </div>
+      {% endif %}
+
+      {% if entry.host %}
+        <div>Host: {{ entry.host }}</div>
+      {% endif %}
+
+      {% if entry.date %}
+        <div>{{ entry.date }}</div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<style>
+  .cv-talk-title {
+    font-weight: 500;
+  }
+</style>
