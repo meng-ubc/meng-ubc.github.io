@@ -30,21 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-repositories",
-          title: "Repositories",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/pdf/CV_MengWang.pdf", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -66,11 +52,11 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/mengwang-ubc", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
+        id: 'social-cv',
+        title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("/assets/pdf/CV_MengWang.pdf", "_blank");
         },
       },{
         id: 'social-scholar',
