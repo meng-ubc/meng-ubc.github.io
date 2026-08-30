@@ -7,6 +7,257 @@
 .publications {
   margin-top: 2rem;
 
+  .publication-highlights {
+    overflow: hidden;
+    margin-bottom: 2.75rem;
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.35rem 1.4rem rgba(0, 0, 0, 0.05);
+
+    &__header {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(18rem, 1.15fr);
+      gap: 1.5rem;
+      align-items: end;
+      padding: 1.35rem 1.5rem;
+      border-bottom: 1px solid var(--global-divider-color);
+    }
+
+    &__eyebrow {
+      margin: 0 0 0.35rem;
+      color: var(--global-theme-color);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      line-height: 1.25;
+    }
+
+    &__summary {
+      margin: 0;
+      color: var(--global-text-color-light);
+      font-size: 0.875rem;
+      line-height: 1.55;
+    }
+
+    &__table-wrap {
+      overflow-x: auto;
+    }
+
+    &__table {
+      width: 100%;
+      margin: 0;
+      border-collapse: collapse;
+
+      th,
+      td {
+        padding: 0.9rem 1.5rem;
+        vertical-align: middle;
+        border-bottom: 1px solid var(--global-divider-color);
+      }
+
+      thead th {
+        color: var(--global-text-color-light);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+
+      tbody tr {
+        transition: background-color 0.15s ease;
+
+        &:hover {
+          background-color: rgba(127, 127, 127, 0.06);
+        }
+
+        &:last-child {
+          th,
+          td {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &__venue {
+      width: 65%;
+      font-weight: 400;
+    }
+
+    &__venue-label {
+      display: grid;
+      grid-template-columns: 4.25rem minmax(0, 1fr);
+      gap: 0.5rem;
+      align-items: baseline;
+    }
+
+    &__venue-code {
+      color: var(--global-theme-color);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    &__venue-name {
+      color: var(--global-text-color-light);
+      font-size: 0.85rem;
+    }
+
+    &__count {
+      width: 5rem;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+    }
+
+    &__years {
+      width: 9rem;
+    }
+
+    &__year-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    &__year {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.18rem 0.55rem;
+      color: var(--global-text-color);
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.3;
+      text-decoration: none;
+      white-space: nowrap;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 999px;
+      transition:
+        color 0.15s ease,
+        border-color 0.15s ease,
+        background-color 0.15s ease;
+
+      &:hover,
+      &:focus-visible {
+        color: var(--global-theme-color);
+        text-decoration: none;
+        background-color: rgba(127, 127, 127, 0.06);
+        border-color: var(--global-theme-color);
+      }
+    }
+
+    &__year-marker {
+      position: relative;
+      top: -0.12em;
+      margin-left: 0.05rem;
+      color: var(--global-theme-color);
+      font-size: 0.72rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    &__year--first-author {
+      background-color: rgba(127, 127, 127, 0.06);
+      background-color: color-mix(in srgb, var(--global-theme-color) 6%, transparent);
+      border-color: var(--global-theme-color);
+    }
+
+    &__notes {
+      padding: 0.65rem 1.5rem 0.75rem;
+      color: var(--global-text-color-light);
+      font-size: 0.75rem;
+      line-height: 1.45;
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    &__recognition,
+    &__first-authorship {
+      display: grid;
+      grid-template-columns: 5rem minmax(0, 1fr);
+      gap: 0.55rem;
+      align-items: center;
+      margin: 0;
+
+      a {
+        font-weight: 600;
+      }
+    }
+
+    &__recognition {
+      margin-top: 0.3rem;
+    }
+
+    &__note-label {
+      justify-self: start;
+      color: var(--global-theme-color);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    &__note-text {
+      min-width: 0;
+      text-align: left;
+    }
+
+    &__first-author-symbol {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      justify-self: start;
+      min-width: 1.7rem;
+      padding: 0.08rem 0.4rem;
+      color: var(--global-theme-color);
+      font-size: 0.7rem;
+      font-weight: 600;
+      line-height: 1.2;
+      vertical-align: middle;
+      background-color: rgba(127, 127, 127, 0.06);
+      background-color: color-mix(in srgb, var(--global-theme-color) 6%, transparent);
+      border: 1px solid var(--global-divider-color);
+      border-color: var(--global-theme-color);
+      border-radius: 999px;
+    }
+
+    @media (max-width: 767.98px) {
+      &__header {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        align-items: start;
+        padding: 1.1rem;
+      }
+
+      &__table {
+        th,
+        td {
+          padding: 0.8rem;
+        }
+      }
+
+      &__venue-label {
+        grid-template-columns: 3.8rem minmax(0, 1fr);
+        gap: 0.35rem;
+      }
+
+      &__notes {
+        padding: 0.6rem 0.8rem 0.7rem;
+      }
+
+      &__recognition,
+      &__first-authorship {
+        grid-template-columns: 4.75rem minmax(0, 1fr);
+        gap: 0.45rem;
+      }
+    }
+  }
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
@@ -38,6 +289,10 @@
 
     li {
       margin-bottom: 1rem;
+
+      [id] {
+        scroll-margin-top: 6rem;
+      }
 
       .preview {
         display: inline-block;

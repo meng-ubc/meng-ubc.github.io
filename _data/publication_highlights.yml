@@ -1,0 +1,44 @@
+summary: >
+  Peer-reviewed publications in computer architecture and quantum computing.
+
+venues:
+  - short_name: ISCA
+    full_name: IEEE/ACM International Symposium on Computer Architecture
+    papers:
+      - key: wang2025accelerating
+        year: 2025
+        first_author: true
+      - key: wang2026transpiler
+        year: 2026
+        first_author: true
+
+  - short_name: MICRO
+    full_name: IEEE/ACM International Symposium on Microarchitecture
+    papers:
+      - key: wang2024qoncord
+        year: 2024
+        first_author: true
+
+  - short_name: ASPLOS
+    full_name: ACM International Conference on Architectural Support for Programming Languages and Operating Systems
+    papers:
+      - key: wang2024red
+        year: 2024
+        first_author: true
+
+  - short_name: TQC
+    full_name: ACM Transactions on Quantum Computing
+    papers:
+      - key: hoyt2026qasmtrans
+        year: 2026
+
+  - short_name: PRR
+    full_name: Physical Review Research
+    papers:
+      - key: hgnj-v4j7
+        year: 2026
+
+recognition:
+  paper_key: wang2026transpiler
+  paper_label: 2026 ISCA paper
+  award: Distinguished Artifact Award
