@@ -5,11 +5,13 @@ title: Publications
 description:
 nav: true
 nav_order: 1
+hide_page_header: true
 ---
 
 <!-- _pages/publications.md -->
 <div class="publications">
 
+{% comment %}
 {% assign highlights = site.data.publication_highlights %}
 
 <section class="publication-highlights" aria-labelledby="publication-highlights-title">
@@ -87,7 +89,16 @@ nav_order: 1
 
   </div>
 </section>
+{% endcomment %}
 
-{% bibliography %}
+<section class="publication-category" aria-labelledby="peer-reviewed-publications">
+  <h2 id="peer-reviewed-publications">Peer-reviewed</h2>
+  {% bibliography --query @*[category=peer_reviewed] %}
+</section>
+
+<section class="publication-category" aria-labelledby="preprints-workshops-publications">
+  <h2 id="preprints-workshops-publications">Preprints and Workshops</h2>
+  {% bibliography --query @*[category=preprints_and_workshops] %}
+</section>
 
 </div>

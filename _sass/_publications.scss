@@ -7,6 +7,10 @@
 .publications {
   margin-top: 2rem;
 
+  .publication-category + .publication-category {
+    margin-top: 4rem;
+  }
+
   .publication-highlights {
     overflow: hidden;
     margin-bottom: 2.75rem;
@@ -307,6 +311,20 @@
           color: var(--global-text-color);
           font-weight: 600;
           text-decoration: none;
+
+          &--top-architecture {
+            display: inline-block;
+            padding: 0.05rem 0.08rem 0.16rem;
+            color: var(--global-theme-color);
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: 0.045em;
+            background: transparent;
+            border: 0;
+            border-bottom: 0.2rem solid var(--global-theme-color);
+            border-radius: 0;
+          }
         }
 
         .venue-award {
