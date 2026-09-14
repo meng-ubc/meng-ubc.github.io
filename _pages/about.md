@@ -31,3 +31,5 @@ My research focuses on **scalable and efficient quantum computing systems**. It 
 My work has appeared in top computer architecture venues including **ISCA**, **MICRO**, and **ASPLOS**. I develop compiler, architecture, and runtime techniques for quantum circuit simulation, distributed and multi-device execution, and fault-tolerant quantum computation, with an emphasis on bridging theoretical quantum algorithms, practical large-scale systems, and emerging quantum hardware.
 
 I have also built cross-disciplinary and multi-institution collaborations, including quantum chemistry simulation work at UBC with the National Research Council Canada (**NRC**) and participation in the Quantum Science Center (**QSC**) and Co-design Center for Quantum Advantage (**C2QA**) during my research at Pacific Northwest National Laboratory (**PNNL**). These collaborations connect quantum systems research with applications in computer science, chemistry, physics, and national laboratory programs.
+
+**I am currently on the job market and welcome opportunities in quantum computing systems, computer architecture, and related areas.**
