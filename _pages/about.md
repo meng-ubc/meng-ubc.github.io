@@ -26,10 +26,10 @@ latest_posts:
 
 Hello! I'm a Ph.D. candidate in Computer Engineering at the University of British Columbia, where I work with [Professor Prashant J. Nair](https://prashantnair.bitbucket.io/).
 
+<p class="text-danger"><strong>I am currently on the job market and open to both industry and academic faculty positions.</strong></p>
+
 My research focuses on **scalable and efficient quantum computing systems**. It spans **quantum architecture, quantum compilation, simulation, and fault-tolerant quantum computing**, with an emphasis on system-level techniques that reduce the cost of executing quantum programs across the computing stack.
 
 My work has appeared in top computer architecture venues including **ISCA**, **MICRO**, and **ASPLOS**. I develop compiler, architecture, and runtime techniques for quantum circuit simulation, distributed and multi-device execution, and fault-tolerant quantum computation, with an emphasis on bridging theoretical quantum algorithms, practical large-scale systems, and emerging quantum hardware.
 
 I have also built cross-disciplinary and multi-institution collaborations, including quantum chemistry simulation work at UBC with the National Research Council Canada (**NRC**) and participation in the Quantum Science Center (**QSC**) and Co-design Center for Quantum Advantage (**C2QA**) during my research at Pacific Northwest National Laboratory (**PNNL**). These collaborations connect quantum systems research with applications in computer science, chemistry, physics, and national laboratory programs.
-
-**I am currently on the job market and welcome opportunities in quantum computing systems, computer architecture, and related areas.**
